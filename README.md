@@ -63,3 +63,8 @@ This command starts the FastAPI server using Uvicorn with live reloading enabled
    ```bash
    poetry run pytest
    ```
+
+  Or
+   ```bash
+   PYTHONPATH=$(pwd) poetry run pytest
+   ```
