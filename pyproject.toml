@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "trading-execution-system"
+version = "0.1.0"
+description = "Trade Execution Syste,"
+authors = ["Arman Sargsyan <sarkissian001>"]
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.115.8"
+uvicorn = "^0.34.0"
+pydantic = "^2.10.6"
+httpx = "^0.28.1"
+sqlalchemy = "^2.0.37"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+black = "^24.4.2"
+
+
+[tool.poetry.scripts]
+start = "trading_execution_system.__main__:main"
+
+
+# command to foramt files - poetry run black .
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''

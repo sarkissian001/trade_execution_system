@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+.venv
+venv
+dist
+build
+*.log
+tmp
+.cache
+docker-compose.yml
